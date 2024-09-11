@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <style>
+        .head{
+            background-image:url(./images/slider1.jpg);
+            height: 700px;
+        }
+        .left-header{
+            display: flex;
+            gap: 20px;
+            position: absolute;
+            top: 20px;
+            left: 200px;
+            font-size: smaller;
+                  
+        }
+        .right-header{
+            display: flex;
+            gap: 20px;
+            position: absolute;
+            top: 20px;
+            right: 120px;
+            font-size: smaller;
+
+        }
+        .ait{
+            height: 40px;
+            position: absolute;
+            top:20px;
+        }
+        .basket{
+            height: 30px;
+            position: absolute;
+            top:30px;
+            right: 60px;
+
+        }
+        .zero{
+            font-size: 28px; 
+            color: black;
+            background-color:yellow;  
+            width: 1.3em;
+            height: 1.2em; 
+            text-align: center;
+            line-height: 1em; 
+            border-radius: 100%;
+            position: absolute;
+            top: 0px;
+            right:20px;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        nav a {
+            font-size:14px;
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+            padding: 20px 2px;
+        }
+
+        nav a:hover {
+            background-color: yellow;
+        }
+        .dropdown {
+            margin-top: 20px;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%; 
+            left: 0;
+            background-color:white;
+            padding: 10px;
+        }
+
+        .dropdown-content a {
+            padding: 10px 20px;
+            display: block;
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+        .dropdown-content a:hover {
+            background-color: #50aa18;
+        }
+         .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .ravi{
+            padding-top: 200px;
+            padding-left: 200PX;
+        }
+        .buy{
+            border-radius: 20px;
+            padding: 4px 20px;
+            background-color: black ;
+            color: #fff;
+    
+        }
+        .buy:hover{
+            background-color:#50aa18;
+
+        }
+        .the{
+            margin-left: 512px;
+            font-size: x-large;
+        }
+        .scammer{
+            height: 40px;
+            width: 40px;
+        }
+        .fig{
+            display: flex;
+        }
+        .pop{
+            display: flex;
+            margin-left: 512px;
+            gap: 35px;
+        }
+        pop:hover{
+            color: black;
+        }
+        .container{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            background-color: aliceblue;
+            column-gap: 10px;
+            padding:1px;
+        }  
+        .container img{
+            height: 440px;
+            width: 400px;
+            padding: 0px;
+            margin: 0px;
+        }
+        .container .puk{
+            position: relative;
+            top:-60px;
+            text-align: center;
+         }
+        .katha{
+            position: relative;
+            top: -50px;
+        }
+        .offer{
+            position: relative;
+            top: -80px;
+        }
+        .foot{
+            background-color:lightgrey;
+            height: 400px;
+        }
+        .category{
+            margin-left:612px;
+            font-size: 40px;
+        }
+        .lastimg{
+            height: 50px;
+            width: 100px;
+            margin-left: 40px;
+        }
+        .para{
+            margin-left: 140px;
+            margin-top: -40px;
+        }
+        .dining{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            margin-left: 580px;
+            margin-top: -90px;
+            gap: 10px;
+        }
+        .dining1{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            margin-left: 820px;
+            margin-top: -190px;
+            gap: 10px;
+        }
+        .dining2{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            margin-left: 1080px;
+            margin-top: -190px;
+            gap: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="head">
+    <h3 class="zero">o</h3>
+    <a href="#"><img class="ait"  src="../project details/images/logo-white (2).png" alt="logo"></a>
+    <img class="basket" src="./images/basket_icon.png" alt="basket">
+    <div>
+        <nav class="left-header">
+            <div class="dropdown">
+                <a href="#" >SHOP &#x25BC;</a> <!-- Dropdown arrow -->
+                <div class="dropdown-content">
+                    <a href="#">Furniture</a>
+                    <a href="#">Bedding</a>
+                    <a href="#">Lighting</a>
+                    <a href="#">Pillow and Decor</a>
+                    <a href="#">Wall Art and Mirror</a>
+                    <a href="#">Table Top</a>
+                    <a href="#">Glassware</a>
+                </div>
+            </div>
+            <a href="#">DESIGN IDEAS</a>
+            <a href="#">STORIES</a>
+            <a href="#">FAQS</a>
+            <a href="../contact.html">CONTACT US</a>
+            <a href="#">SALE</a>
+    </nav>
+</div>
+<div>
+    <nav class="right-header">
+       <a href="#">SEARCH</a>
+        <a href="#">SIGN IN</a>
+    </nav>
+</div>
+<div class="ravi">
+    <h2 class="swoon">Swoon Lounge Chair</h2>
+    <p class="by">By : Sellemore</p>
+    <p class="rp">Rp 2.700.00</p>
+    <button class="buy" value="buy" type="login">Buy</button>
+    </div>
+</header>
+<div>
+    <p class="the">Create the Home You've Always Wanted</p>
+    </div>
+    <div class="fig">
+    <figure>
+        <a href="#">
+        <img src="./images/plumbers_icon.png" alt="plumb"></a>
+        <figcaption>clans</figcaption>
+    </figure>
+    <figure>
+        <a href="#">
+        <img src="./images/home_builders_icon.png" alt="plumb"></a>
+        <figcaption>Home builders</figcaption>
+    </figure>
+    <figure>
+        <a href="#">
+        <img src="./images/interior_designer_icon.png" alt="plumb"></a>
+        <figcaption>Interior Designer</figcaption>
+    </figure>
+    <figure>
+        <a href="#">
+        <img class="scammer" src="./images/canopy.png" alt="plumb"></a>
+        <figcaption>canopy</figcaption>
+    </figure>
+    <figure>
+        <a href="#">
+        <img src="./images/contractors_icon.png" alt="plumb"></a>
+        <figcaption>contractors</figcaption>
+    </figure>
+    <figure>
+        <a href="#">
+        <img class="scammer" src="./images/movers.png" alt="plumb"></a>
+        <figcaption>movers</figcaption>
+    </figure>
+    <figure>
+        <a href="#">
+        <img class="scammer" src="./images/welders.png" alt="plumb"></a>
+        <figcaption>welders</figcaption>
+    </figure>
+    <figure>
+        <a href="#">
+        <img src="./images/furniture_repairs_icon.png" alt="plumb"></a>
+        <figcaption>furniture</figcaption>
+    </figure>
+    <figure>
+        <a href="#">
+        <img src="./images/landscape_designer_icon.png" alt="plumb"></a>
+        <figcaption>Landscape Designer</figcaption>
+    </figure>
+    <figure>
+        <a href="#">
+        <img class="scammer" src="./images/carpet.png" alt="plumb"></a>
+        <figcaption>carpet cleaners</figcaption>
+    </figure>
+</div>
+<div class="pop">
+    <p><a href="#">POPULAR</a></p>
+    <P><a href="#">NEW PRODUCTS</a></P>
+    <P><a href="#">BEST DEAL</a></P>
+</div>
+<div class="container">
+    <a href="#">
+        <figure >
+            <img src="./images/stool1.jpg" alt="">
+            <figcaption class="puk">carpet cleaners</figcaption>
+            <figcaption class="puk">carpet cleaners</figcaption>
+        </figure>
+      </a>
+      <a href="#">
+        <figure>
+            <img src="./images/table.jpg" alt="">
+            <figcaption class="puk">carpet cleaners</figcaption>
+            <figcaption class="puk">carpet cleaners</figcaption>
+        </figure>
+      </a>
+      <a href="#">
+        <figure >
+            <img  src="./images/vintage.jpg" alt="">
+            <figcaption class="puk">carpet cleaners</figcaption>
+            <figcaption class="puk">carpet cleaners</figcaption>
+        </figure>
+      </a>
+      <a href="#">
+        <figure class="katha">
+            <img  src="./images/side_table.jpg" alt="">
+            <figcaption class="puk">carpet cleaners</figcaption>
+            <figcaption class="puk">carpet cleaners</figcaption>
+        </figure>
+      </a>
+      <a href="#">
+        <figure class="katha">
+            <img src="./images/table.jpg" alt="">
+            <figcaption class="puk">carpet cleaners</figcaption>
+            <figcaption class="puk">carpet cleaners</figcaption>
+        </figure>
+      </a>
+</div>
+<div>
+    <img class="offer" style="width: 100%; height:280px" src="./images/banner_full_width_mobile.jpg" alt="">
+</div>
+<footer class="foot">
+    <div class="category">
+        <p>Top categories</p>
+    </div>
+    <div>
+       <img class="lastimg" src="./images/logo-white (2).png" alt="">
+     <p class="para">Furniture.id serves the needs of the design,entertainment and <br>arts communities by providing public and private conference <br>spaces for lectures,meetings,special events,screenings, <br>exhibitions and receptions</p>
+       <div class="dining">
+
+       <a href="#">Dining Room</a>
+       <a href="#">Decoration</a>
+       <a href="#">Renovation</a>
+       <a href="#">Bedroom</a>
+       <a href="#">Furniture</a>
+       <a href="#">Bathroom</a>
+       <a href="#">Lighting</a>
+    </div>
+    <div class="dining1">
+
+        <a href="#">Architects</a>
+        <a href="#">Interior Designers</a>
+        <a href="#">contractors</a>
+        <a href="#">Home Builders</a>
+        <a href="#">Landscape Designers</a>
+        <a href="#">Furniture repairs</a>
+        <a href="#">Air conditioning</a>
+     </div>
+     <div class="dining2">
+
+        <a href="#">Plumbers</a>
+        <a href="#">Electricians</a>
+        <a href="#">Welders</a>
+        <a href="#">Movers</a>
+        <a href="#">carpet cleaners</a>
+        <a href="#">Glass services</a>
+        <a href="#">canopy services</a>
+     </div>
+</div>
+ </div>
+</footer>
+</body>
+</html>
