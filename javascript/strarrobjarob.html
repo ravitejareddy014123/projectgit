@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data techniques</title>
+    <style>
+        h1{
+            text-shadow: 2px 1px 2px orange;
+            text-decoration: underline 2px double blue;
+        }
+        h2{
+            text-decoration: underline;
+            color: red;
+            background-color: rgb(236, 255, 127);
+        }
+        h3{
+            text-decoration: underline;
+            background-color: lawngreen;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let n=[1,2,3,4,5,6,6,7,8,9]
+        let i=0;
+        while(i<n.length){
+            document.write(n[i]+"</br>");
+            i++; 
+        }
+
+        for(let i=0;i<=9;i++){
+            document.write(n[i]+"<br>")
+        }
+        // String literal:
+
+        document.write("<h1>String Literal:</h1>");
+        var course="java training";
+        document.write(course+"<br>");
+        document.write(typeof course)
+
+
+        // String constructor:
+
+        document.write("<h2>String constructor:</h2>");
+        var trainer=new String("venkataramana");
+        document.write(trainer+"<br>")
+        document.write(typeof trainer+"<br>");
+
+
+        // Array literal:
+        document.write("<h2>array literal:</h2>");
+
+        var course=["Html","css","java","python","angular"];
+        document.write(course+"<br>")
+        console.log(course);
+        console.log(course[0]);
+        // document.write(course[0]+"<br>")
+        // document.write(course[2]+"<br>")
+        // document.write(course[1]+"<br>")
+        // document.write(course[3]+"<br>")
+        // document.write(course[4]+"<br>")
+        document.write(typeof course+"<br>");
+
+
+          // Array retrievals:
+          document.write("<h2>array Retrievals:</h2>");
+
+          console.log(course+"<br>");
+        console.log(course[0]);
+        document.write(course[0]+"<br>")
+        document.write(course[2]+"<br>")
+        document.write(course[1]+"<br>")
+        document.write(course[3]+"<br>")
+        document.write(course[4]+"<br>")
+        console.log(course.length);
+        document.write(course.length+"<br>")
+
+
+        // Array retrievals using loops:
+        document.write("<h2>array Retrievals using loops:</h2>");
+        
+        // for loop:
+        document.write("<h3>for loops:</h2>");
+
+        for(let i=0;i<5;i++){
+            document.write(course[i]+"<br>")
+        }
+
+        // while loop:
+        document.write("<h3>While loops:</h2>");
+
+        let j=0;
+        while(j<course.length){
+            document.write(course[j]+"<br>")
+            j++;
+        }
+         // do loop:
+         document.write("<h3> do loops:</h2>");
+
+            j=0;
+            do{
+                document.write(course+"<br>");
+                j++;
+            }while(j<course.length+"<br>");
+
+
+            // Array Constructors:
+        document.write("<h2>Array Constructors:</h2>");
+
+        var skills=["cricket","hockey","tennis","basket","carrom"];
+        console.log(skills);
+        document.write(skills+"<br>")
+        console.log(skills[1]);
+        document.write(skills[3]+"<br>")
+        // for loop:
+        document.write("<h3>for loops:</h2>");
+
+        for(let i=0;i<5;i++){
+            document.write(skills[i]+"<br>")
+        }
+         // while loop:
+         document.write("<h3>While loops:</h2>");
+
+         let k=0;
+        while(k<skills.length){
+            document.write(skills[k]+"<br>")
+            k++;
+        }
+
+        // do loop:
+        document.write("<h3> do loops:</h2>");
+            var a=0;
+            do{
+                document.write(skills+"<br>");
+                a++;
+            }while(a<skills.length+"<br>");
+
+
+            // Objects: {keys:values};
+        document.write("<h1> Objects storage techniques:</h1>");
+        document.write("<h2> Objects Retrievals manually:</h2>");
+
+            let airpod={
+                name:"apple airpod",
+                color: "black",
+                price:20000,
+                desc:"good product"
+            };
+            console.log(airpod);
+            document.write(airpod.name+"<br>");
+            document.write(airpod.color+"<br>");
+            document.write(airpod.price+"<br>");
+            document.write(airpod.desc+"<br>");
+            document.write(airpod.name+"<br>");
+
+            // for loop:
+        document.write("<h3>for loops:</h2>");
+
+         for(let i in airpod){
+            document.write(airpod[i]+"<br>")
+         }
+         let b=0;
+        //  while
+        while(b<airpod.length){
+           console.log(airpod[b]+"<br>");
+           document.write(airpod[b]+"<br>")
+            b++;
+        }
+
+        let marker={
+            name:"venkat",
+            color:"red",
+            price:20
+        }
+    document.write("<h2>marker:</h2>")
+    document.write(marker+"<br>")
+    console.log(marker);
+    for(let i in marker){
+        document.write(marker[i]+"<br>")
+    }
+// Array of Objects:
+    document.write("<h1>  Array of Objects:</h1>");
+
+    let users=[{
+        id:1,
+        name:"venkata",
+        email:"venkat@gmail.com",
+        pho:11111,
+        qualificaton:"MCA"
+    },
+    {
+        id:2,
+        name:"chandra",
+        email:"chandra@gmail.com",
+        pho:77777,
+        qualificaton:"MBA"
+    },{
+        id:3,
+        name:"laxmi",
+        email:"laxmi@gmail.com",
+        pho:333333,
+        qualificaton:"M Com"
+    }];
+    console.log(users)
+    document.write(users[0].id+"<br>")
+    document.write(users[1].id+"<br>")
+    document.write(users[2].id+"<br>")
+    
+    document.write(users[0].name+"<br>")
+    document.write(users[1].name+"<br>")
+    document.write(users[2].name+"<br>")
+
+    document.write(users[0].qualificaton+"<br>")
+    document.write(users[1].qualificaton+"<br>")
+    document.write(users[2].qualificaton+"<br>");
+
+    document.write("<h2>Array of Objects Retrieval in loops:</h2>");
+
+    // for loop:
+    document.write("<h3>for loops:</h2>");
+        for(let i=0;i<users.length;i++){
+            document.write(users[i].id+"<br>");
+            document.write(users[i].name+"<br>");
+            document.write(users[i].email+"<br>");
+            document.write(users[i].pho+"<br>");
+            document.write(users[i].qualificaton+"<br>");
+            document.write("<br>");
+
+        }
+
+
+
+
+    
+
+        
+        
+
+         
+
+
+    </script>
+</body>
+</html>

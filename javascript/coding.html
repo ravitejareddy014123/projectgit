@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+  let name="ravi";
+  document.write(name+ "</br>")
+  var j=[1,2,3];
+  document.write(j.reverse()+ "</br>")
+  let reversedName = name.split('').reverse().join('');
+    document.write(reversedName + "<br>")
+    //swaping of two numbers without using temp variable
+    let a=12,b=13;
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    document.write("a=",a ," b=",b+"</br>");
+    //uniquenumbers in array
+    let numbers = [1, 2, 2, 3, 4, 4, 5];
+    let uniqueNumbers = [...new Set(numbers)];
+    //new set will form unique set and spread(...) operator will convert set into array
+    document.write(uniqueNumbers +"<br>"); 
+    //max number in an array
+    let number = [10, 20, 5, 30, 15];
+    let maxNumber = Math.max(...number);
+    document.write("Maximum number: " + maxNumber);  // Output: Maximum number: 30
+
+
+
+</script>
+</html>

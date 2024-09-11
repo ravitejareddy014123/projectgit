@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    <!-- Array Methods:
+        -Push():
+        -Pop():
+        -unshift():
+        -Shift():
+        -slice():
+        -spilce():
+        -sort():
+        -reverse():
+        -concat():
+        -map():
+        -filter():
+        reduce():
+     -->
+        <script>
+    document.write("<h3>push():</h3>"+"<br>");
+
+      let cricketers=["Sachin","dhoni","dinesh","Gambir","rohit"];
+      document.write(cricketers+"<br>");
+      cricketers.push("virat")
+      document.write(cricketers);
+      console.log(cricketers);
+
+    document.write("<h3>pop():</h3>"+"<br>");
+    //    virat is deleted
+      cricketers.pop();
+      document.write(cricketers+"<br>");
+    //   rohit is deleted;
+      cricketers.pop();
+      document.write(cricketers+"<br>");
+
+    document.write("<h3>unshift():</h3>"+"<br>");
+    //   surya kumar yadav is added starting of the element;
+      cricketers.unshift("Surya kumar Yadav");
+      console.log(cricketers);
+      document.write(cricketers);
+
+    document.write("<h3>shift():</h3>"+"<br>");
+
+     cricketers.shift();
+     document.write(cricketers+"<br>");
+     cricketers.shift();
+     document.write(cricketers+"<br>");
+
+    //  Slice():
+    document.write("<h3>Slice():</h3>"+"<br>");
+
+      let a=[1,2,3,4,5,6,7,8,9,10];
+      console.log(a);
+      document.write(a+"<br>")
+      console.log(a.slice(3));
+      document.write(a.slice(4))
+      console.log(a.slice(2,8));
+
+    //  Spilce():
+    document.write("<h3>Spilce():</h3>"+"<br>");
+
+    let users=["uday","venkat","mani","lax","virat","hardik"];
+    document.write(users+"<br>");
+     users.splice(3,0,"gopal");
+    document.write(users+"<br>");
+     users.splice(3,2);
+    document.write(users+"<br>");
+
+     // Sort():
+     document.write("<h3>Sort():</h3>"+"<br>");
+
+     let b=[3,5,1,18,23,4,6,32,12,11];
+    document.write(b+"<br>");
+    document.write(b.sort()+"<br>");
+
+     // revers():
+     document.write("<h3>reverse():</h3>"+"<br>");
+     document.write(b.reverse()+"<br>");
+     
+
+     // concat():
+      document.write("<h3>concat():</h3>"+"<br>");
+
+    var x=[1,2,3,4,5];
+    var y=[6,7,8,9,1,2];
+    document.write(x.concat(y));
+
+        </script>
+    
+</body>
+</html>

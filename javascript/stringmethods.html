@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Method in java script</title>
+</head>
+   <!-- Stirng methods: It is a sequence of multiple  characters. 
+
+        -Length method():  retrive the total length of the string.
+ -->
+    
+
+
+       <script>
+
+    //    length method():
+     document.write("<h3>Length method():</h3>")
+
+       let name="Venkata ramana";
+       document.write(name.length);
+
+    //    indexOf method():
+    document.write("<h3>indexOf method():</h3>");
+
+    let nam ="Venkata Ramana Yadav";
+
+    console.log(nam.length);
+   document.write(nam.indexOf("y"));
+   console.log(nam.indexOf("y"));
+   console.log(nam.indexOf("V"));
+   console.log(nam.indexOf("g"));
+
+     //    Substring method():
+     document.write("<h3>Substring method():</h3>");
+
+     document.write(nam.substring(1)+"<br>")
+      document.write(nam.substring(1,14)+"<br>")
+      console.log(nam.substring(8,15));
+
+    //   toUppercase():
+    document.write("<h3>Uppercase method():</h3>");
+
+    document.write(nam.toUpperCase());
+    console.log(nam);
+    console.log(nam.toUpperCase());
+
+    // toLowercase():
+    document.write("<h3>Lowercase method():</h3>");
+
+    document.write(nam.toLowerCase());
+    console.log(nam);
+    console.log(nam.toLowerCase());
+
+    // replace():
+    document.write("<h3>Replace method():</h3>");
+
+    let greetings=" Hello Students";
+    console.log(greetings);
+    document.write(greetings+"<br>");
+    let newgreetings=greetings.replace("Hello","Hi");
+    console.log(newgreetings);
+    document.write(newgreetings)
+
+     // replaceall():
+     document.write("<h3>Replaceall method():</h3>");
+
+    let greeting=" Hello Students,Hello All,Hello venkat";
+    document.write(greeting+"<br>");
+    let newgreeting=greeting.replace("venkat","hemanth");
+   //  let newgreetings=greeting.replaceAll("HEllo","Hi");
+
+    document.write(newgreeting);
+
+    // Replace all:
+document.write("<h3>Replace all:</h3>"+"<br>");
+let greet="Hello students!,Hello All,Hello students";
+document.write(greet+"<br>");
+document.write(greet.replaceAll("Hello","HI"))
+    
+    // CharAt():
+    document.write("<h3>CharAt method():</h3>");
+    let str="Java Script";
+    document.write(str.charAt(5))
+    console.log(str.charAt(5));
+    console.log(str.charAt(3));
+
+     // Concat():
+     document.write("<h3>Concat method():</h3>");
+     let str1="Venkata";
+     let str2="Ramana";
+     document.write(str1+"<br>")
+     document.write(str2+"<br>")
+     document.write(str1.concat(str2))
+     console.log(str1.concat(str2))
+
+     // Slice():
+     document.write("<h3>Slice method():</h3>");
+     let str3="REturn the total length of the String";
+     console.log(str3.slice(7));
+     document.write(str3.slice(17,24));
+
+    //  split method:
+    document.write("<h3>Split method():</h3>");
+    document.write(str3.split("  ")+"<br>")
+    document.write(str3.split("  "))
+    console.log(str3.split(' '))
+
+    // trimstart():
+    // trimend():
+    document.write("<h3>trimstar method():</h3>");
+    console.log( str1.trimStart());
+    console.log( str2.trimEnd());
+
+
+    var s="ravi teja";
+    document.write(s.indexOf("s"))
+
+
+       </script>
+    
+</body>
+</html>
